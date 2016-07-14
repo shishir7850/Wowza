@@ -90,7 +90,7 @@ public class MainActivity extends Activity implements RtspClient.Callback,
         // Configures the SessionBuilder
         mSession = SessionBuilder.getInstance()
                 .setContext(getApplicationContext())
-                .setAudioEncoder(SessionBuilder.AUDIO_NONE)
+                .setAudioEncoder(SessionBuilder.AUDIO_AAC)
                 .setAudioQuality(new AudioQuality(8000, 16000))
                 .setVideoEncoder(SessionBuilder.VIDEO_H264)
                 .setSurfaceView(mSurfaceView).setPreviewOrientation(0)
